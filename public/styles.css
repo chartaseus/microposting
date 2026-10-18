@@ -1,0 +1,171 @@
+:root {
+  scrollbar-color: teal cornsilk;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1em;
+  background: cornsilk;
+  font-family: monospace;
+  color: teal;
+}
+
+a {
+  color: cadetblue;
+
+  &:visited {
+    color: darkseagreen;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.vt-login {
+  display: flex;
+  border: 2px solid grey;
+  background: linen;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 8px;
+  font-family: sans-serif;
+  text-decoration: none;
+
+  img {
+    margin: 0 8px 0 4px;
+  }
+
+  span {
+    color: grey;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 2px solid teal;
+}
+
+header,
+footer {
+  margin: 64px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+
+  a,
+  button {
+    border: 2px solid teal;
+    background-color: cornsilk;
+    font-family: monospace;
+    text-decoration: none;
+    padding: 2px;
+    font-weight: bold;
+    color: teal;
+
+    &:visited {
+      color: teal;
+    }
+  }
+}
+
+textarea {
+  width: 100%;
+}
+
+label:has(+ #newtag) {
+  display: block;
+}
+
+textarea,
+label,
+select,
+input {
+  margin: 2px 0;
+}
+
+textarea,
+select,
+input,
+button {
+  color: teal;
+  accent-color: darkseagreen;
+  background-color: beige;
+  border: 1px solid teal;
+  font-family: monospace;
+}
+
+fieldset {
+  border: 2px solid teal;
+  margin: 8px 0;
+}
+
+legend,
+button {
+  border: 2px solid teal;
+  font-weight: bold;
+}
+
+button {
+  background-color: cornsilk;
+
+  &:active {
+    background-color: beige;
+  }
+}
+
+article {
+  border: 2px solid teal;
+  margin: 16px 0;
+  padding: 8px;
+
+  *:first-child {
+    margin-block-start: 0;
+  }
+}
+
+.micropost-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.metadata {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: end;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+dialog {
+  background-color: cornsilk;
+  color: teal;
+}
+
+.deleted {
+  border-color: grey;
+  color: grey;
+  background-color: linen;
+}
+
+body:has(#hidedeleted:checked) {
+  article.deleted {
+    display: none;
+  }
+}

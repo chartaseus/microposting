@@ -1,0 +1,86 @@
+/* this is the style for your public microposting page.
+   you can completely replace this with your own CSS. */
+
+:root {
+  scrollbar-color: teal cornsilk;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1em;
+  background: cornsilk;
+  font-family: monospace;
+  color: teal;
+}
+
+a {
+  color: cadetblue;
+
+  &:visited {
+    color: darkseagreen;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 2px solid teal;
+}
+
+header,
+footer {
+  margin: 64px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+
+  a,
+  button {
+    border: 2px solid teal;
+    background-color: cornsilk;
+    font-family: monospace;
+    text-decoration: none;
+    padding: 2px;
+    font-weight: bold;
+    color: teal;
+
+    &:visited {
+      color: teal;
+    }
+  }
+}
+
+article {
+  border: 2px solid teal;
+  margin: 16px 0;
+  padding: 8px;
+
+  *:first-child {
+    margin-block-start: 0;
+  }
+}
+
+.metadata {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
