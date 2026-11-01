@@ -83,6 +83,7 @@ export const user = {
 The public front page and individual micropost view are meant to be made your
 own.
 
-- **Structure:** edit [`views/Microposting.tsx`](views/Microposting.tsx).
+- **Header, footer, structure:** edit
+  [`views/Microposting.tsx`](views/Microposting.tsx).
 - **Styles:** edit [`public/microposting.css`](public/microposting.css). You can
   completely replace the content with your own CSS.

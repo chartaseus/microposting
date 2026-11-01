@@ -19,9 +19,9 @@ export const Microposting: FC<{ micros: Micropost[] }> = ({ micros }) => (
     }
 
     <header>
-      <h1>microposts</h1>
+      <h1>microposting</h1>
       <p>
-        <i>a poster posting into the void</i>
+        <i>for posters who like posting</i>
       </p>
       <nav>
         <a href="#footer">About</a> •{" "}
@@ -56,8 +56,11 @@ export const Microposting: FC<{ micros: Micropost[] }> = ({ micros }) => (
     }
     <Footer>
       <p>
-        I like posting but don't want to be on social media. you can't @ me but
-        you can always <a href="mailto:not@realemail.address">email me</a>.
+        This is a single-user microposting app hosted in Val Town.{" "}
+        <a href="https://www.val.town/x/foliage/microposting">
+          Remix this project
+        </a>{" "}
+        to create your own microposting page.
       </p>
     </Footer>
 
