@@ -21,10 +21,17 @@ import { Manage } from "../views/Manage.tsx";
 type Ctx = Context<AppEnv>;
 
 async function frontPage(c: Ctx) {
-  return c.render(
-    <Microposting micros={await getLivePosts()} />,
-    { showHeader: false, showFooter: false, stylesheet: "/microposting.css" },
-  );
+  const micros = await getLivePosts();
+  const wantsJson = c.req.query("json") === "1";
+
+  if (wantsJson) {
+    return c.json(micros);
+  } else {
+    return c.render(
+      <Microposting micros={micros} />,
+      { showHeader: false, showFooter: false, stylesheet: "/microposting.css" },
+    );
+  }
 }
 
 async function microPage(c: Ctx) {

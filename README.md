@@ -15,6 +15,7 @@ or a custom domain (Val Town Pro).
 - Private interface to edit, soft-delete and restore microposts. Soft-deleting
   removes a post from the public pages but keeps it in the database. You can
   delete a post permanently using Val Town's SQLite UI.
+- [Advanced] Get JSON data of your live microposts.
 
 ## Setup
 
@@ -87,3 +88,10 @@ own.
   [`views/Microposting.tsx`](views/Microposting.tsx).
 - **Styles:** edit [`public/microposting.css`](public/microposting.css). You can
   completely replace the content with your own CSS.
+
+## JSON
+
+You might want use your microposts data somewhere else (e.g. display them on
+your website, and only use this app as the backend). You can request your live
+(undeleted) microposts in a JSON format by adding `?json=1` to your url, for
+example: `https://micropost.val.run/?json=1`.
