@@ -21,11 +21,11 @@ export const Microposting: FC<{ micros: Micropost[] }> = ({ micros }) => (
     <header>
       <h1>microposting</h1>
       <p>
-        <i>for posters who like posting</i>
+        <i>posting into the void</i>
       </p>
       <nav>
         <a href="#footer">About</a> •{" "}
-        <a href="https://foliage.val.run">↖ Homepage</a>
+        <a href="https://chartaseus.dev">↖ Homepage</a>
       </nav>
     </header>
 
